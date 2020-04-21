@@ -29,9 +29,31 @@ This application is developed in Python and Flask, inluding the GET, POST, PUT a
 2. Delete a charactor
 
 ## 2. Deploying Cassandra in Docker
-###Pull the Cassandra Docker Image:
+### Pull the Cassandra Docker Image:
 ```
   sudo apt update
   sudo apt install docker.io
   sudo docker pull cassandra:latest
 ````
+### Run a Cassandra instance in Docker:
+```
+  sudo docker run --name cassandra-instance -p 9042:9042 -d cassandra:latest
+```
+### Interact with Cassandra via cqlsh using CQL:
+```
+  sudo docker exec -it cassandra-instance cqlsh
+```
+### Start Database:
+```
+  sudo docker start cassandra-instance
+```
+### Create a keyspace via Cassandra terminal:
+```
+  CREATE KEYSPACE rm WITH REPLICATION = {'class' : 'SimpleStrategy', 'replication_factor' : 1};
+```
+### Create a table inside of the keyspace:
+```
+    CREATE TABLE rm.charactors (rm_name text, rm_status text, rm_status text, rm_type text, rm_gender text, PRIMARY KEY (rm_name)) ;
+````
+
+    
