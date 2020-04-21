@@ -9,6 +9,6 @@ This application is developed in Python and Flask, inluding the GET, POST, PUT a
 4. This application code is well documented.
 
 ## 1. REST API Requests
-###**@app.route('/', methods =['GET'])**###
+### **@app.route('/', methods =['GET'])**
 1. extract data from Rick and Morty API(https://rickandmortyapi.com/api/character/)
 2. store all the data into Cassandra Database and show all charactors
