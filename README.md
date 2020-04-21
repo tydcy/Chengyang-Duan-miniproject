@@ -28,4 +28,10 @@ This application is developed in Python and Flask, inluding the GET, POST, PUT a
 1. Determine whether the character exists according to the attribute name
 2. Delete a charactor
 
-
+## 2. Deploying Cassandra in Docker
+###Pull the Cassandra Docker Image:
+```
+  sudo apt update
+  sudo apt install docker.io
+  sudo docker pull cassandra:latest
+````
