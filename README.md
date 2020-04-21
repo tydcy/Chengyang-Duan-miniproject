@@ -1,7 +1,7 @@
-# 190470973-Chengyang Duan-ecs781p Cloud computing-miniproject
+# 190470973-Chengyang Duan-ECS781p Cloud computing-miniproject
 
 ## Rick and Morty API
-This application is developed in Python and Flask, inluding the GET, POST, PUT and delete to achieve CRUD operating.
+This application is developed in Python and Flask, inluding the GET, POST, PUT and DELETE to achieve CRUD operating.
 
 1. This application provides a dynamically generated REST API. The API have a sufficient set of services for the selected application domain. The REST API responses conform to REST standards.
 2. This application makes use of an external REST service to complement its functionality.
@@ -20,4 +20,12 @@ This application is developed in Python and Flask, inluding the GET, POST, PUT a
 ### **@app.route('/readscharactor/<name>',  methods=['GET'])**
 1. Read a charactor
   
-### ** **
+### **@app.route('/updateacharactor',  methods=['PUT'])**
+1. Determine whether the character exists according to the attribute name
+2. Update a charactor
+
+### **@app.route('/deleteacharactor',  methods=['DELETE'])**
+1. Determine whether the character exists according to the attribute name
+2. Delete a charactor
+
+
