@@ -73,7 +73,7 @@ def create():
 
 
 #read a charactor
-@app.route('/readscharactor/<name>',  methods=['GET'])
+@app.route('/readacharactor/<name>',  methods=['GET'])
 def read(name):
     rows = session.execute("""Select * from rm.charactors WHERE rm_name = '{}'""".format(name))
     result = []
