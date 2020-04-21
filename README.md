@@ -56,4 +56,28 @@ This application is developed in Python and Flask, inluding the GET, POST, PUT a
     CREATE TABLE rm.charactors (rm_name text, rm_status text, rm_status text, rm_type text, rm_gender text, PRIMARY KEY (rm_name)) ;
 ````
 
+## 3. Serving the application over https
+### Creat requirments.txt
+'''
+  pip
+  Flask
+  cassandra-driver
+  requests
+  requests_cache
+```
+### Create the Dockerfile
+```
+  FROM python:3.7-alpine
+  WORKDIR /myapp
+  COPY . /myapp
+  RUN pip install -U -r requirements.txt
+  EXPOSE 8080
+  CMD ["python","app.py"]
+```
+### Bulit imgae and run
+```
+  cd rm
+  sudo docker build . --tag=rm:v4
+  sudo docker run -p 8080:8080 rm:v4
+```
     
