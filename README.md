@@ -17,7 +17,7 @@ This application is developed in Python and Flask, inluding the GET, POST, PUT a
 1. Determine whether the character already exists according to the attribute name
 2. Create a charactor
 
-### **@app.route('/readscharactor/<name>',  methods=['GET'])**
+### **@app.route('/readcharactor/<name>',  methods=['GET'])**
 1. Read a charactor
   
 ### **@app.route('/updateacharactor',  methods=['PUT'])**
@@ -53,7 +53,7 @@ This application is developed in Python and Flask, inluding the GET, POST, PUT a
 ```
 ### Create a table inside of the keyspace:
 ```
-    CREATE TABLE rm.charactors (rm_name text, rm_status text, rm_species text, rm_type text, rm_gender text, PRIMARY KEY (rm_name)) ;
+  CREATE TABLE rm.charactors (rm_name text, rm_status text, rm_species text, rm_type text, rm_gender text, PRIMARY KEY (rm_name)) ;
 ````
 
 ## 3. Serving the application over https
