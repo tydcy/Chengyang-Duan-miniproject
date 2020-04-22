@@ -53,7 +53,7 @@ This application is developed in Python and Flask, inluding the GET, POST, PUT a
 ```
 ### Create a table inside of the keyspace:
 ```
-    CREATE TABLE rm.charactors (rm_name text, rm_status text, rm_status text, rm_type text, rm_gender text, PRIMARY KEY (rm_name)) ;
+    CREATE TABLE rm.charactors (rm_name text, rm_status text, rm_species text, rm_type text, rm_gender text, PRIMARY KEY (rm_name)) ;
 ````
 
 ## 3. Serving the application over https
