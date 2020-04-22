@@ -17,7 +17,7 @@ This application is developed in Python and Flask, inluding the GET, POST, PUT a
 1. Determine whether the character already exists according to the attribute name
 2. Create a charactor
 
-### **@app.route('/readcharactor/<name>',  methods=['GET'])**
+### **@app.route('/readacharactor/<name>',  methods=['GET'])**
 1. Read a charactor
   
 ### **@app.route('/updateacharactor',  methods=['PUT'])**
